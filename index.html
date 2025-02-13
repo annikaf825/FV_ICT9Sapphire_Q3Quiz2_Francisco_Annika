@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TXT Ticketing center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<style>
+h2{
+background-image: url("https://img.freepik.com/free-vector/sky-background-with-sugar-cotton-candy-clouds-stars-design_1048-15338.jpg") ;
+background-repeat: repeat;
+color: #7886C7;
+}
+
+body{
+     background-image:url('https://wallpapers.com/images/hd/txt-desktop-jpxv1gua2rmzzvpd.jpg');
+     background-repeat: no repeat;
+     background-size: cover;
+     background-attachment: fixed;
+} 
+
+label{
+  color: #304463;
+}
+
+summary{
+  color: #7886C7;
+  background-color: #FFF2F2;
+}
+
+div{
+padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    background-color: rgba(255, 228, 225, 0.8); /* Light pink with transparency */
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+</style>
+<center>
+  <h2 style="color: #7886C7; font-family: Consolas; ">TXT Concert Ticket Center</h2>
+<div class="container">
+      
+        <br>
+<!--PERSONAL INFO-->
+  <details ontoggle="message()">
+    <summary>Personal Information</summary>
+      <i id="Personalinfo"></i>
+<br><br>
+        <label>Complete Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name...">
+        <br><br>
+        <label>Email:</label><br>
+        <input type="email" id="email" placeholder="Enter your email...">
+        </select><br><br><br>
+<button type="submit"class="btn btn-info" onclick="showValue()">Submit
+</button></details>
+
+<br>
+<center>
+
+<!--TICKET DETAILS-->
+
+ <details ontoggle="ticketreminder()">
+    <summary>Ticket Details</summary>
+      <i id="ticketingprice"></i>
+<br><br>
+        <label>Choose your seat:</label><br>
+        <select id="seat">
+            <option value="General Admission">General Admission</option>
+            <option value="VIP">VIP</option>
+            <option value="Patron">Patron</option>
+        </select>
+        <br><br>
+        <label>Choose your ticket type:</label><br>
+        <select id="ticketType">
+            <option value="Student">Student</option>
+            <option value="Adult">Adult</option>
+            <option value="pwd">PWD</option>
+        </select><br><br><br>
+<button type="submit"class="btn btn-info" onclick="showValue()">Ticket Price
+</button></details>
+
+<br>
+<!--PRINT-->
+
+ <details ontoggle="printicket()">
+    <summary>Print Ticket</summary>
+      <i id="print"></i>
+<br><br>
+        <img src="https://ticketimage.interpark.com/Play/image/large/24/24018281_p.gif">
+        </select><br><br><br>
+<button type="submit"class="btn btn-info" onclick="showValue()">Print Ticket
+</button></div></details>
+
+<br><br></form>
+
+
+
+<script>
+  function message(){
+      document.getElementById("Personalinfo").innerHTML="Fill out your information.";
+    }
+
+function ticketreminder(){
+      document.getElementById("ticketingprice").innerHTML="Learn your ticket information.";
+    }
+
+function printicket(){
+      document.getElementById("print").innerHTML="Print your ticket";
+    }
+
+        </script>
+</details>
+<section id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center" style="color: #526D82;">We provide World Tour tickets of TOMORROWxTOGETHER.</p>
+        
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center" style="color: #526D82;">Email: txt@ticketconcert.com | Tel no.: 0xx-0xxx</p><a style="color: #526D82;">Submitted by Annika Francisco, 9S.</a>
+<br>
+    </section></div>
+
+
+
+    <label>
+        <p style="color: antiquewhite;"> TXT Ticket Website</p>  <a href="index.html"><button>Refresh</button></a> <br> <a style="color: floralwhite;" href="https://docs.google.com/document/d/16FJrzEtXpHS4L6Nzja7M5YZGH-XUbQ4mjATMlnXQN8o/edit?usp=sharing" target="new" style="text-align: center; font-size: 30px;">References</a>
+
+    </label>
+
+       
+
+
+</html>
